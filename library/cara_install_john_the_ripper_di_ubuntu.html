@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cara Install John The Ripper di Ubuntu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Cara Install John The Ripper di Ubuntu</h1>
+              <span>Publikasi pada 15 October 2021</span>
+              <h2>Persiapan</h2>
+              <p>1. Ubuntu harus sudah terinstall dengan git.</p>
+              <p>2. Cara installnya dengan menggunakan perintah pada terminal :</p>
+              <p>~$ sudo apt install git</p>
+              <h2>Cara Install</h2>
+              <p>1. Kunjungi Github <a href="https://github.com/openwall/john">openwall/john.</a></p>
+              <p>2. Clone scripnya dengan perintah :</p>
+              <p>~$ git clone https://github.com/magnumripper/JhonTheRipper.git</p>
+              <p>3. Kemudian masuk ke direktori "src" pada file johntheripper</p>
+              <p>~$ cd ./JhonTheRipper/src</p>
+              <p>4. Kemudian update ubuntu dengan perintah :</p>
+              <p>~$ sudo apt-get update</p>
+              <p>5. Lalu install pakage pendukung software john the ripper dengan perintah :</p>
+              <p>~$ sudo apt-get install libssl-dev</p>
+              <p>Lalu lakukan installasi dengan perintah :</p>
+              <p>~$ ./configure && make</p>
+              <p>Tunggu hingga proses selesai dan John the ripper siap digunakan.</p>
+              <p>Note : untuk menjalankannya melalui direktori "~$ cd JhonTheRipper/run"</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Browser di Terminal Ubuntu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Web Browser di Terminal Ubuntu</h1>
+              <span>Publikasi pada 15 October 2021</span>
+
+              <h2>1. W3M</h2>
+              <p>
+                W3m adalah peramban web berbasis teks sumber terbuka yang populer untuk terminal. Meskipun proyek aslinya tidak lagi aktif, versi aktifnya dikelola oleh pengembang yang berbeda, Tatsuya Kinoshita. w3m cukup sederhana,
+                mendukung koneksi SSL, warna, dan gambar sebaris juga. Tentu saja, tergantung pada sumber daya apa yang Anda coba akses, hal-hal mungkin terlihat berbeda di pihak Anda. Sesuai tes cepat saya, sepertinya tidak memuat
+                DuckDuckGo tetapi saya bisa menggunakan Google di terminal dengan baiK. Anda cukup mengetik w3m di terminal untuk mendapatkan bantuan setelah instalasi. Jika Anda penasaran, Anda juga dapat melihat repositori di GitHub .
+              </p>
+              <p>W3M tersedia di sebagian besar repositori default untuk semua distribusi Linux berbasis Debian. Jika Anda memiliki distro berbasis Arch, Anda mungkin ingin memeriksa AUR jika tidak tersedia secara langsung.</p>
+              <h3>Cara Install W3M di Ubuntu</h3>
+              <p>Menggunakan perintah berikut :</p>
+              <p>~$ sudo apt install w3m w3m-img</p>
+              <p>Untuk memulai, Anda cukup mengikuti perintah di bawah ini :</p>
+              <p>~$ w3m google.com</p>
+              <p>
+                Anda perlu mengganti google.com ke situs web mana pun yang ingin Anda telusuri. Terakhir, Anda harus tahu bahwa Anda dapat menggunakan tombol panah keyboard untuk menavigasi dan tekan enter saat Anda ingin mengambil tindakan
+              </p>
+              <p>Untuk keluar, Anda dapat menekan SHIFT+Q</p>
+              <p>Untuk kembali ke halaman sebelumnya — SHIFT+B</p>
+              <p>Pintasan tambahan termasuk SHIFT + T untuk membuka tab baru dan SHIFT + U untuk membuka URL baru</p>
+              <h2>2. LYNX</h2>
+              <p>
+                Lynx adalah browser baris perintah open source lain yang dapat Anda coba. Untungnya, lebih banyak situs web cenderung berfungsi saat menggunakan Lynx, jadi saya akan mengatakan itu pasti lebih baik dalam aspek itu. Saya
+                dapat memuat DuckDuckGo dan membuatnya berfungsi. Selain itu, saya juga memperhatikan bahwa ini memungkinkan Anda menerima/menolak cookie saat mengunjungi berbagai sumber daya web. Anda dapat mengaturnya untuk selalu
+                menerima atau menolak juga. Jadi, itu hal yang baik. Di sisi lain, ukuran jendela tidak berubah dengan baik saat menggunakannya dari terminal. Saya belum mencari solusi untuk itu, jadi jika Anda mencoba ini, Anda mungkin
+                ingin melakukannya. Dalam kedua kasus, ini berfungsi dengan baik dan Anda mendapatkan semua instruksi untuk pintasan keyboard tepat saat Anda meluncurkannya di terminal.
+              </p>
+              <h3>Cara Install LYNX di Ubuntu</h3>
+              <p>Untuk Ubuntu, Anda hanya perlu mengetikkan :</p>
+              <p>~$ sudo apt install lynx</p>
+              <p>Untuk memulai, Anda hanya perlu mengikuti perintah di bawah ini :</p>
+              <p>~$ lynx google.com</p>
+              <p>Anda hanya perlu mengganti situs web contoh dengan sumber daya yang ingin Anda kunjungi</p>
+              <h2>3. LINKS2</h2>
+              <p>
+                Links2 adalah peramban berbasis teks yang menarik yang dapat Anda gunakan dengan mudah di terminal Anda dengan pengalaman pengguna yang baik. Ini memberi Anda antarmuka yang bagus untuk mengetikkan URL dan kemudian
+                melanjutkan segera setelah Anda meluncurkannya
+              </p>
+              <p>
+                Perlu dicatat bahwa tema akan tergantung pada pengaturan terminal Anda, saya menetapkannya sebagai "hitam-hijau", maka inilah yang Anda lihat. Setelah Anda meluncurkannya sebagai browser baris perintah, Anda hanya perlu
+                menekan tombol apa saja untuk memunculkan URL prompt atau Q untuk keluar darinya. Ini berfungsi cukup baik dan membuat teks dari sebagian besar situs. Tidak seperti Lynx, Anda tidak mendapatkan kemampuan untuk
+                menerima/menolak cookie. Selain itu, tampaknya berfungsi dengan baik.
+              </p>
+              <h3>Cara Install LINKS2 di Ubuntu</h3>
+              <p>Anda dapat menginstalnya dengan mengetikkan perintah berikut di terminal :</p>
+              <p>~$ sudo apt install links2</p>
+              <h2>4. ELINKS</h2>
+              <p>
+                ELinks mirip dengan Links2 — tetapi tidak lagi dipertahankan. Anda masih akan menemukannya di repositori default dari berbagai distribusi, oleh karena itu, saya menyimpannya di daftar ini. Itu tidak berbaur dengan tema
+                terminal sistem Anda. Jadi, ini mungkin bukan pengalaman yang bagus sebagai browser berbasis teks tanpa mode "gelap" jika Anda membutuhkannya
+              </p>
+              <h3>Cara Install ELINKS di Ubuntu</h3>
+              <p>Anda hanya perlu mengetikkan yang berikut di terminal :</p>
+              <p>~$ sudo apt install elinks</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

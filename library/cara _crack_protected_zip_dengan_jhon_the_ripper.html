@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cara Crack Protected Zip dengan John The Ripper</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Cara Crack Protected Zip dengan John The Ripper</h1>
+              <span>Publikasi pada 15 October 2021</span>
+
+              <h2>Persiapan</h2>
+              <p>1. Install terlebih dahulu john the ripper.</p>
+              <p>2. pada <a href="cara_install_john_the_ripper_di_ubuntu.html">tautan berikut</a> terdapat tutorial cara install john the ripper</p>
+              <h2>Cara Penggunaan John The Ripper</h2>
+              <p>1. Siapkan file "contoh.zip" yang akan di crack.</p>
+              <p>2. Lalu simpan di direktori /JohnTheRipper/run</p>
+              <p>3. Kemudian Masuk ke direktori "run" dengan terminal dengan perintah :</p>
+              <p>~$ cd JohnTheRipper/run</p>
+              <p>4. Kemudian ketik perintah :</p>
+              <p>~$ ./zip2john contoh.zip > zip.hash ==> "contoh.zip sesuaikan dengan nama file zip yang akan di crack</p>
+              <p>5. Kemudian cek apakah sudah terbuat file dengan nama "zip.hash" dengan perintah "ls"</p>
+              <p>6. Jika ada, Kemudian ketik perintah berikut untuk memulai crack :</p>
+              <p>~$ ./john zip.hash</p>
+              <p>7. Jika berhasil akan tampil password yang di crack tadi.</p>
+              <h3>Note : anda dapat memodifikasi kumpulan password pada bagian password.lst</h3>
+              <p>1. Buka terminal lalu arahkan ke direktori "run"</p>
+              <p>~$ cd JohnTheRipper/run</p>
+              <p>2. Lalu cari file password.lst jika ada ketik perintah berikut untuk memodifikasinya.</p>
+              <p>~$ sudo nano password.lst</p>
+              <p>3. ketik shortcut CTRL + X lalu "yes" untuk menyimpan perubahan</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

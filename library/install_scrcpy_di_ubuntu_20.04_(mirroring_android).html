@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Scrcpy di Ubuntu 20.04 (Mirroring Android)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Install Scrcpy di Ubuntu 20.04 (Mirroring Android)</h1>
+              <span>Publikasi pada 8 October 2021</span>
+
+              <h2>Sebelum Intall</h2>
+              <p>1. Sebelum menginstall scrcpy sebaiknya kita menginstall dulu ADB (Android Debug Bridge), aplikasi ini berguna untuk mengatur perangkat Android dari PC. Lakukan perintah ini di Terminal.</p>
+              <p>~$ sudo apt install android-tools-adb android-tools-fastboot</p>
+              <h2>Cara install</h2>
+              <p>Setelah ADB terinstall baru kita install scrcpy, untuk Ubuntu Linux versi 20.04 ke atas, aplikasi ini sudah tersedia di repo Ubuntu, untuk Ubuntu Linux versi dibawahnya kita perlu menggunakan installer snapd</p>
+              <p>~$ snap install scrcpy</p>
+              <h2>Cara Penggunaan</h2>
+              <h3>Melalui Kabel USB</h3>
+              <p>1. Sebelum menggunakan bisa menggunakan scrcpy, kita perlu mengatur terlebih dahulu perangkat Android kita. Kita perlu mengaktifkan USB debugging.</p>
+              <p>2. Caranya masuk dulu ke Developer Option dan aktifkan USB Debugging</p>
+              <p>3. Jika Ingin PC bisa mengoperasikan perangkat Android lewat mouse dan keyboard di PC, aktifkan juga USB Debugging (Security Settings)</p>
+              <p>4. Sambungkan peranggkat Android ke PC lewat kabel USB, Beri izin permission Allow USB Debugging pada perangkat Android. Jalankan perintah ini diterminal untuk mencek apakah PC sudah terhubung dengan perangkat Android</p>
+              <p>~$ adb devices ==> Jika sudah tersambung akan muncul kode perangkat dibawah "List of devices attached"</p>
+              <p>5. jalankan perintah untuk memulai scrcpy</p>
+              <p>~$ scrcpy</p>
+              <h3>Melalui WIFI (Not Recommended ==> lagging)</h3>
+              <p>Note : PC dan perangkat Android harus terhubung di jaringan yang sama</p>
+              <p>1. pertama kita harus memberi akses port 5555 pada perangkat Android kita. Untuk itu jalankan perintah ini di terminal (PC dan perangkat Android masih tersambung lewat USB)</p>
+              <p>~$ adb tcpip 5555</p>
+              <p>2. Kemudian cari IP yang digunakan perangkat Android kita, caranya mudah tinggal lihat dari "About Phone", Cari "Status"</p>
+              <p>3. Dibagian "Ip Address" contohnya [192.1168.6.265]</p>
+              <p>3. Jalankan perintah ini untuk memulai scrcpy</p>
+              <p>~$ adb connect 192.1168.6.265:5555 ==> "192.1168.6.265" sesuaikan ip address dengan yang ada di android</p>
+              <h3>Koneksi Lebih Dari Satu Devices</h3>
+              <p>1. Gunakan perintah adb untuk melihat nama device yang terhubung</p>
+              <p>~$ adb devices ==> contohnya : 192.168.6.265:5555 [device]</p>
+              <p>2. Kemudian gunaakan perintah ini untuk mengakses setiap device yang terhubung</p>
+              <p>~$ scrcpy -s 192.168.6.265:5555 ==> "192.168.6.265:5555" sesuaikan dengan device yang terhubung</p>
+              <p>3. Jika terjadi lagging (melambat), karena masalah koneksi kabel atau wirelessnya, coba kurangi resolusi atau video bit rate nya</p>
+              <p>~$ scrcpy -b2M -m800</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

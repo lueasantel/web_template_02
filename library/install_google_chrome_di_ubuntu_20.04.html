@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Google Chrome di ubuntu 20.04</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Install Google Chrome di ubuntu 20.04</h1>
+              <span>Publikasi pada 7 October 2021 </span>
+
+              <h2>Downloads Files</h2>
+              <h3>Melalui Web Browser</h3>
+              <p>1. Buka web browser default yang ada pada ubuntu contohnya seperti : firefox.</p>
+              <p>2. Kemudian ke halaman <a href="https://www.google.com/chrome/">homepage Google Chrome</a> kemudian di downloads.</p>
+              <p>3. Klik "download chrome" lalu pilih file yang berformat ".deb" dan pilih 32bit / 64bit sesuai spesifikasi laptop / komputer.</p>
+              <p>5. kemudian download.</p>
+              <h3>Melalui Terminal</h3>
+              <p>1. Buka terminal lalu menuju ke folder ~/Downloads dengan perintah</p>
+              <p>~$ cd Downloads ==> sesuai dengan keinginan masing - masing mau di folder apapun.</p>
+              <p>~$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ==> jika belum ada wget bisa di install dulu dengan perintah [~$ sudo apt install wget] pada terminal.</p>
+              <p>2.cek dengan perintah "ls". Di sana sekarang terdapat file dengan nama "google-chrome-stable_current_amd64.deb".</p>
+
+              <h2>Cara Install</h2>
+              <p>1. Buka terminal</p>
+              <p>~$ cd Downloads ==> tempat file google-chrome.deb.</p>
+              <p>2. lalu gunakan peintah berikut :</p>
+              <p>~$ sudo dpkg -i google-chrome-stable_current_amd64.deb ==> sesuaikan nama "google-chrome-stable_current_amd64.deb" dengan nama yang dipakai.</p>
+              <p>3. Tunggu hingga selesai proses installasinya dan jangan lupa lihat pada bagian yang di install jika ada coment yang seperti ini :</p>
+              <p>~$ dpkg: error processing package virtualbox-* (--install) atau beberapa paket yang : however:</p>
+              <p>4. Gunakan perintah berikut untuk memperbaikinya :</p>
+              <p>~$ sudo apt-get -f install ==> perintah ini berfungsi untuk menginstall paket yang belun terinstall atau tertinggal pada saat proses instalasi sebelumnya.</p>
+              <p>5. Kemudian Google Chrome siap digunakan</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

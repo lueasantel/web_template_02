@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Virtualbox di ubuntu 20.04</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container">
+        <div class="screen-home">
+          <div class="screen__content-home">
+            <div class="banner">
+              <h1>Library.Github <span>Pages</span></h1>
+            </div>
+
+            <div class="menu">
+              <a href="../index.html">Home</a>
+              <a href="../library.html">Library</a>
+              <a href="../repository.html">Repository</a>
+              <a href="../about.html">About</a>
+            </div>
+
+            <div class="content">
+              <h1>Install Virtualbox di ubuntu 20.04</h1>
+              <span>Publikasi pada 7 October 2021 </span>
+
+              <h2>Downloads Files</h2>
+              <p>1. Download virtualbox di <a href="https://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">Homepage Virtualbox</a> sesuaikan dengan versi yang digunakan.</p>
+              <p>2. Download juga <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox Extension Pack</a> ini disarankan untuk menambakan beberapa fitur pada virtualbox</p>
+              <h2>Cara install</h2>
+              <p>1. Buka terminal pada ubuntu melalui menu aplikasi atau biasanya menggunakan shortcut CTRL + ALT + T lalu Enter</p>
+              <p>2. Ikuti perintah dibawah ini:</p>
+              <p>~$ cd Downloads ==> sesuaikan dengan lokasi penyimpanan file virtualbox yang di downlaod. Di sini saya menyimpannya di folder Downloads.</p>
+              <p>~$ sudo dpkg -i virtualbox-*.deb ==> nama "virtualbox.deb" disesuaikan dengan nama file yang didownloads.</p>
+              <p>
+                3. Tunggu hingga selesai proses installasinya dan jangan lupa lihat pada bagian yang di install jika ada coment yang seperti ini : ~$ dpkg: error processing package virtualbox-* (--install) atau beberapa paket yang :however:
+              </p>
+              <p>4. Gunakan perintah berikut untuk memperbaikinya :</p>
+              <p>~$ sudo apt-get -f install ==> perintah ini berfungsi untuk menginstall paket yang belun terinstall atau tertinggal pada saat proses installasi sebelumnya.</p>
+              <h2>Pemasangan VirtualBox Extention Park</h2>
+              <p>1. Buka virtualbox yang telah diinstall.</p>
+              <p>2. Buka menu File -> Preferences (CTRL+G).</p>
+              <p>3. Pilih menu Extensions.</p>
+              <p>4. Klik tombol + untuk instalasi Extension Package, buka file extension yang telah didownload sebelumnya. Masukkan password untuk melanjutkan instalasi.</p>
+              <p>5. Tunggu hingga selesai dan virtualbox siap digunakan.</p>
+            </div>
+          </div>
+          <footer>Created by Lueas Antel Tahun 2021 for Future</footer>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
